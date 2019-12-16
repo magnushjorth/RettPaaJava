@@ -1,8 +1,13 @@
+import easyIO.*;
+
 class Pyramideformatering {
   public static void main (String[] args) {
-    System.out.println("   a   ");
-    System.out.println("  a a  ");
-    System.out.println(" a b a ");
-    System.out.println("a c c a");
+    Out skjerm = new Out();
+    int bredde = 10;
+
+    skjerm.outln("a", bredde, Out.CENTER);
+    skjerm.outln("a a", bredde, Out.CENTER);
+    skjerm.outln("a b a", bredde, Out.CENTER);
+    skjerm.outln("a c c a", bredde, Out.CENTER);
   }
 }
