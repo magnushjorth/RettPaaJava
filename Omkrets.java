@@ -1,27 +1,8 @@
 class Omkrets {
   public static void main (String[] args) {
-    double o;
-    double pi;
-    double r;
-    double d;
-
-    pi = 3.14;
-    r = 5;
-    d = r*2;
-
-    o = pi * d;
-    System.out.println("Omkrets: " + o);
-
-    r = 8;
-    d = r*2;
-
-    o = pi * d;
-    System.out.println("Omkrets: " + o);
-
-    r = 10;
-    d = r*2;
-
-    o = pi * d;
-    System.out.println("Omkrets: " + o);
+    for (int r = 1; r <= 10; r++) {
+      double omkrets = 2 * 3.14 * r;
+      System.out.println("Omkrets for " + r + " er " + omkrets);
+    }
   }
 }
