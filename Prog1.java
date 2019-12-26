@@ -1,25 +1,14 @@
 class Prog1 {
-  public static void main (String[] args) {
-    ABC pek = new ABC(14);
 
-    pek.dobbelt();
-    pek.dobbelt();
-    pek.skrivVerdi();
-  }
-}
+    public static void main(String[] args) {
 
-class ABC {
-  int verdi;
+	   ABC pek ;
 
-  ABC(int i) {
-    verdi = i;
-  }
-
-  void dobbelt() {
-    verdi += verdi;
-  }
-
-  void skrivVerdi() {
-    System.out.println("Verdi: " + verdi);
-  }
+		pek = new ABC();
+		pek.i = 14;
+		System.out.println("Verdien av \"i\" i pek-objektet er:" + pek.i);
+		pek.dobbelt();
+		pek.dobbelt();
+		System.out.println("Verdien av \"i\" i pek-objektet er:" + pek.i);
+   }
 }
